@@ -1,9 +1,10 @@
 # Colorscheme
-readonly COLOR_CWD='blue'
+readonly COLOR_CWD='magenta'
 readonly COLOR_GIT='cyan'
 readonly COLOR_SUCCESS='green'
 readonly COLOR_FAILURE='red'
 readonly COLOR_TIME='cyan'
+readonly COLOR_ARCH='white'
 
 readonly SYMBOL_GIT_BRANCH='⑂'
 readonly SYMBOL_GIT_MODIFIED='*'
@@ -72,9 +73,10 @@ _config_prompt() {
     local cwd="%F{$COLOR_CWD}%~%f"
     local git="%F{$COLOR_GIT}$(_git_info)%f"
     local time="%F{$COLOR_TIME}%D{%H:%M:%S}%f"
+    local arch="%F{$COLOR_ARCH}$(arch)%f"
 
-    PROMPT="$cwd$git $symbol "
-    RPROMPT="$time"
+    PROMPT="%n@%m $arch $cwd$git $symbol %# "
+    # RPROMPT="Not set"
 }
 
 
