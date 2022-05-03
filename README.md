@@ -1,4 +1,4 @@
-# Powerline for Zsh with architecture for people with a mixture of arm and x86 Macs.
+# Powerline for Zsh with architecture for people with a mixture of arm and x86 Macs and Linux computers.
 
 Adds ` COLOR_ARCH` so that the prompt reminds you if you are running arm or x86.
 
@@ -23,21 +23,19 @@ PROMPT="%n@%m $arch $cwd$git $symbol %# "
 ```
 Comments out the right prompt.
 
-
-
 # Forked from 
 
 ## zsh-powerline
 
-Powerline for Zsh in pure Zsh script. See also
-[bash-powerline](https://github.com/riobard/bash-powerline/).
+Powerline for Zsh in pure Zsh script.
+(https://github.com/riobard/zsh-powerline/).
 
 ### Installation
 
-Download the Zsh script
+Download the Zsh script, from the multizone branch
 
 ```sh
-curl https://raw.githubusercontent.com/riobard/zsh-powerline/master/zsh-powerline.sh > ~/.zsh-powerline.sh
+curl https://raw.githubusercontent.com/multizone-uk/zsh-powerline/multizone/zsh-powerline.sh > ~/.zsh-powerline.sh
 ```
 
 and source it in your `.zshrc`
